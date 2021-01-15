@@ -1,0 +1,15 @@
+<html>
+    
+    <body bgcolor = #green>
+        <center><h1><u>Book Details </u></h1></center>
+        {% for x in books %}
+         <h2>Title: {{x.title}}</h2>
+         <h2>Author Name  : {{x.author}}</h2>
+         <h2>ISBN Number : {{x.num}}</h2>
+         <h2>Published Date : {{x.p_date}}</h2>
+         <h2>No. of copies sold : {{x.numOfCopies}}</h2>
+         <hr/>
+        {% endfor %}
+    
+    </body>
+</html>
